@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Starbucks Survey Form</h1>
+        <p>Thank you for helping us improve customer satisfaction</p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              required
+              name="name"
+              id="name"
+              class="form-control"
+              type="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              class="form-control"
+              required
+              name="email"
+              id="email"
+              placeholder="Enter your e-mail"
+              type="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="age">Age<span class="optional">(Optional)</span></label>
+            <input
+              class="form-control"
+              required
+              placeholder="Age"
+              id="age"
+              min="10"
+              max="99"
+              name="age"
+              type="number"
+            />
+          </div>
+          <div class="form-group">
+            <p>How often do you come to Starbucks?</p>
+            <select
+              name="Come often Starbucks"
+              id="dropdown"
+              required
+              class="form-control"
+            >
+              <option disabled selected value>Please choose</option>
+              <option value="Once every 2 to 3 days">
+                Once every 2 to 3 days
+              </option>
+              <option value="1 per week">1 per week</option>
+              <option value="2 per week">2 per week</option>
+              <option value="1 per month">1 per month</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Would you recommend Starbucks to a friend?</p>
+            <label class="block" for=""
+              ><input
+                value="yes"
+                name="user-recommend"
+                type="radio"
+                class="input-radio"
+                checked
+              />Yes</label
+            >
+            <label class="block" for=""
+              ><input
+                value="undecided"
+                name="user-recommend"
+                type="radio"
+                class="input-radio"
+              />Undecided</label
+            >
+            <label class="block" for=""
+              ><input
+                value="no"
+                name="user-recommend"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+          </div>
+          <div class="form-group">
+            <p>What is your favorite thing about Starbucks?</p>
+            <select
+              required
+              name="favorite thing about Starbucks"
+              id="dropdown"
+              class="form-control"
+            >
+              <option disabled selected value>Select Option</option>
+              <option value="Quality and delicious coffees">
+                Quality and delicious coffees
+              </option>
+              <option
+                value="Customer-oriented and taste-compatible price policy"
+              >
+                Customer-oriented and taste-compatible price policy
+              </option>
+              <option value="Being accessible and reliable anytime, anywhere">
+                Being accessible and reliable anytime, anywhere
+              </option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>
+              Your favorite coffee types<span class="optional"
+                >(Check all that apply)</span
+              >
+            </p>
+            <label class="block" for=""
+              ><input
+                value="Espresso"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Espresso</label
+            >
+            <label class="block" for=""
+              ><input
+                value="White Mocha"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />White Mocha</label
+            >
+            <label class="block" for=""
+              ><input
+                value="Filter coffee"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Filter coffee</label
+            >
+            <label class="block" for=""
+              ><input
+                value="Turkish coffee"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Turkish coffee</label
+            >
+            <label class="block" for=""
+              ><input
+                value="Cappucino"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Cappucino</label
+            >
+            <label class="block" for=""
+              ><input
+                value="Americano"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Americano</label
+            >
+            <label class="block" for=""
+              ><input
+                value="Frappe"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Frappe</label
+            >
+            <label class="block" for=""
+              ><input
+                value="Latte"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Latte</label
+            >
+            <label class="block" for=""
+              ><input
+                value="Macchiato"
+                name="prefer"
+                class="input-checkbox"
+                type="checkbox"
+              />Macchiato</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Do you have any suggestions?</p>
+            <textarea
+              name="comment"
+              id="comments"
+              class="comment"
+              placeholder="Enter your comment here..."
+            >
+            </textarea>
+          </div>
+          <div class="form-group">
+            <button
+              type="submit"
+              name="submit-button"
+              id="submit"
+              class="submit-button"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
